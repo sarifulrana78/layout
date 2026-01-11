@@ -13,6 +13,23 @@
             display: flex;
             justify-content: space-between;
         }
+        .login-form-container{
+            display: flex;
+            justify-content: center;
+            border: 2px red;
+        }
+        .login-form{
+       display: flex;
+       justify-content: center;
+       flex-direction: column;
+       
+        }
+        .login-form input{
+            margin-top: 20px;
+            width: 50;
+            justify-content: center;
+           border-radius: black;
+        }
     </style>
 </head>
 <body>
@@ -30,9 +47,16 @@
         <a href="">Sign up</a>
        </div>
     </nav>
-    <h3>Please Login</h3>
-    <input type="email" placeholder="enter your email">
-    <input type="password" placeholder="enter password">
+    <section class="login-form-container">
+    <div class="login-form">
+        
+        <h3>Please Login</h3>
+    <input type="email" placeholder="enter your email" required>
+    <input type="password" placeholder="enter password" required>
     <input type="submit" value="Login">
+   
+    </div>
+    </section>
+
 </body>
 </html>
